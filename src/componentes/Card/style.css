@@ -1,0 +1,24 @@
+body{
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+.corpo{
+    background: blue;
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+.tela{
+    align-self: center;
+    width: 285px;
+    height: 485px;
+    background: rgb(38, 47, 71);
+    border-radius: 20px;
+
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
