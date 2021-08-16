@@ -49,7 +49,7 @@ function App() {
             cityName={weather.name}
             country={weather.sys.country}
             data={data.toLocaleDateString()}
-            image={sunAndRain}
+            image={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
             situation={weather.weather[0].description}
             tempe={Math.floor(kelvinToCelsius(weather.main.temp))}
             humidity={weather.main.humidity}
