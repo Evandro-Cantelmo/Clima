@@ -21,4 +21,13 @@ body{
 .cont{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    background: green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0;
 }
