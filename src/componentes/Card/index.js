@@ -9,7 +9,7 @@ function Card(props) {
       <div className="tela">
         <div className="cont">
           <div className="top">
-            <h3>{props.cityName}</h3>
+            <h3>{props.cityName}, {props.country}</h3>
             <p>{props.data}</p>
           </div>
           {props.button}
@@ -25,7 +25,20 @@ function Card(props) {
               <p>{props.tempe}º</p>
             </div>
           </div>
-          <div className="finalMenu"></div>
+          <div className="finalMenu">
+            <div>
+              <img src={props.icon}></img>
+            </div>
+            <div>
+              <img src={props.icon}></img>
+            </div>
+            <div>
+              <img src={props.icon}></img>
+            </div>
+            <div>
+              <img src={props.icon}></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>

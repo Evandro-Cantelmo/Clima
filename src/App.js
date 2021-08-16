@@ -1,6 +1,8 @@
 import "./App.css";
 import Card from "./componentes/Card";
+import ss from "./componentes/image/search.png";
 import sunAndRain from "./componentes/image/sunAndRain.png";
+
 import { useState, useEffect } from "react";
 
 function App() {
@@ -44,11 +46,13 @@ function App() {
               </div>
             }
             cityName={weather.name}
+            country={weather.sys.country}
             data={data.toLocaleDateString()}
             image={sunAndRain}
             situation={weather.weather[0].description}
             tempe={Math.floor(kelvinToCelsius(weather.main.temp))}
             humidity={weather.main.humidity}
+            icon={ss}
           ></Card>
         </div>
       )}
