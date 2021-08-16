@@ -24,6 +24,10 @@ function Card(props) {
               <h6>Temp</h6>
               <p>{props.tempe}º</p>
             </div>
+            <div className="card">
+              <h6>Wind</h6>
+              <p>{props.wind}km/h</p>
+            </div>
           </div>
           <div className="finalMenu">
             <div>

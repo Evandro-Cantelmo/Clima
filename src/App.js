@@ -1,6 +1,6 @@
 import "./App.css";
 import Card from "./componentes/Card";
-import ss from "./componentes/image/search.png";
+import home from "./componentes/image/search.png";
 import sunAndRain from "./componentes/image/sunAndRain.png";
 
 import { useState, useEffect } from "react";
@@ -16,6 +16,7 @@ function App() {
     setWeather(resJson);
   }
   const kelvinToCelsius = (kelvin) => kelvin - 273.15;
+  const msToKm = (ms) => ms * 3.6;
   const data = new Date();
   console.log(data.toLocaleDateString());
   console.log(weather);
@@ -52,7 +53,8 @@ function App() {
             situation={weather.weather[0].description}
             tempe={Math.floor(kelvinToCelsius(weather.main.temp))}
             humidity={weather.main.humidity}
-            icon={ss}
+            wind={Math.floor(msToKm(weather.wind.speed))}
+            icon={home}
           ></Card>
         </div>
       )}
