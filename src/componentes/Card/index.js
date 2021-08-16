@@ -12,7 +12,7 @@ function Card(props) {
             <h3>{props.cityName}</h3>
             <p>{props.data}</p>
           </div>
-          <input placeholder="City"></input>
+          {props.button}
           <img src={props.image}></img>
           <h4>{props.situation}</h4>
           <div className="middle">
@@ -25,9 +25,7 @@ function Card(props) {
               <p>{props.tempe}º</p>
             </div>
           </div>
-          <div className="finalMenu">
-            
-          </div>
+          <div className="finalMenu"></div>
         </div>
       </div>
     </div>
