@@ -1,9 +1,10 @@
 import "./App.css";
 import Card from "./componentes/Card";
+import sunAndRain from "./componentes/image/sunAndRain.png"
 import { useState, useEffect } from "react";
 
 function App() {
-  const kelvinToCelsius = (kelvin) => kelvin - 273.15;
+  let kelvinToCelsius = (kelvin) => kelvin - 273.15;
   const [weather, setWeather] = useState([]);
   async function getWeather() {
     let res = await fetch(
@@ -26,7 +27,11 @@ function App() {
               <Card
                 cityName={weather.name}
                 data={data.toLocaleDateString()}
+                image={sunAndRain}
+                situation={weather.weather[0].description}
                 tempe={Math.floor(kelvinToCelsius(weather.main.temp))}
+                humidity={weather.main.humidity}
+
               ></Card>
             </div>
       ) : ('')}

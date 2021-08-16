@@ -3,9 +3,8 @@ body{
 }
 .container{
   display: flex;
-  background: red;
   justify-content: center;
 }
-.box{
+.img{
   
 }

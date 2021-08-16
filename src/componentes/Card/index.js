@@ -12,7 +12,18 @@ function Card(props) {
             <h3>{props.cityName}</h3>
             <p>{props.data}</p>
           </div>
-          <p>Temperatura: {props.tempe}º </p>
+          <img src={props.image}></img>
+          <h4>{props.situation}</h4>
+          <div className="middle">
+            <div className="card">
+              <h6>Humidity</h6>
+              <p>{props.humidity}%</p>
+            </div>
+            <div className="card">
+              <h6>Temp</h6>
+              <p>{props.tempe}º</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
